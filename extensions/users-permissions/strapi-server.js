@@ -1,5 +1,4 @@
 const authController = require('./controllers/auth');
-const { createCoreController } = require('@strapi/strapi').factories;
 const config = require('./config/refresh-token.json');
 
 module.exports = async (plugin) => {

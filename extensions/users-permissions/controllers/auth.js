@@ -62,7 +62,6 @@ module.exports = function() {
     },
 
     async callback(ctx) {
-      ctx.query.populate = "author";
       await super.callback(ctx);
       await strapi
         .query('plugin::users-permissions.user')
